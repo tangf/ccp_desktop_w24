@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
     <title>Travel</title>
 </head>
 <body>
-    <a href = "#skip">Skip to Main Content</a>
+    <a href = "#skip" tabindex = "1" class="skip">Skip to Main Content</a>
     <header>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "pets.html">Pets</a></li>
-                <li><a href = "recipes.html">Recipes</a></li>
+                <li class = "active"><a href = "recipes.html">Recipes</a></li>
                 <li><a href = "travel.html">Travel</a></li>
             </ul>
         </nav>
         <h1>Recipes</h1>
 
     </header>
-    <main id="skip">
+    <main class="container" id="skip">
 
-        <div>
+        <div class="item1">
             <h2>Japanese Curry</h2>
             <h5>Origin: Japanese</h5>
             <h5>Source: Family Recipe</h5>
@@ -53,11 +55,13 @@
                 </ol>
 
             <h3>Additonal Food Images</h3>
-            <img src="images/curry_sauce.jpeg" width ="200" alt = "Curry sauce">
-            <img src="images/rice.jpeg" width ="200" alt = "Rice">
+            <div class="photo-gallery">
+                <img src="images/curry_sauce.jpeg" width ="200" alt = "Curry sauce">
+                <img src="images/rice.jpeg" width ="200" alt = "Rice">
+            </div>
         </div>
 
-        <div>
+        <div class="item2">
             <h2>Coca-cola Chicken Wings</h2>
             <h5>Origin: Chinese</h5>
             <h5>Source: Family Recipe</h5>
@@ -86,17 +90,20 @@
                 </ol>
 
             <h3>Additonal Food Images</h3>
-            <img src="images/chicken-wings_and_rice_cake.jpg" width ="200" alt = "Coca-cola chicken wings served with rice cake">
-            <img src="images/boils_in_coke.jpg" width ="200" alt = "Chicken wings boiled in coke">
+            <div class="photo-gallery">
+                <img src="images/chicken-wings_and_rice_cake.jpg" width ="200" alt = "Coca-cola chicken wings served with rice cake">
+                <img src="images/boils_in_coke.jpg" width ="200" alt = "Chicken wings boiled in coke">
+            </div>
         </div>
 
-        <div>
+        <div class="item3">
             <h2>Chocolate Chip Banana Bread</h2>
             <h5>Origin: American</h5>
             <h5>Source: https://www.delish.com/cooking/recipe-ideas/a43369646/chocolate-chip-banana-bread-recipe/</h5>
             <h5>Category: Dessert</h5>
             <img src="images/chocolate_chip_banana_bread.JPG" width ="200" alt = "chocolate chip banana bread">
             <p>This is a tried-and-tested recipe that I have used numerous times for making the perfect chocolate chip banana bread! Not only does it help utilize the bananas that have slowly overripened at the back of the fridge, it ends up creating an incredibly delicious, and relatively healthy, dessert. </p>
+            <br>
             <h3>Recipe Ingredients</h3>
                 <ul>
                     <li>Cooking spray</li>
@@ -112,7 +119,7 @@
                     <li>1/2 cup chopped toasted walnuts</li>
                     <li>1/2 cup semisweet chocolate chips</li>
                 </ul>
-
+            <br>
             <h3>Recipe Steps</h3>
                 <ol>
                     <li>Preheat the oven to 350º. Line a 9"-by-5" loaf pan with parchment and grease with cooking spray. </li>
@@ -121,11 +128,13 @@
                     <li>Fold in walnuts and chocolate chips and transfer to prepared pan.</li>
                     <li>Bake bread until a tester inserted into the center comes out clean, about 1 hour. Let cool 10 minutes in pan, then invert onto a wire rack and let cool completely.</li>
                 </ol>
-
+            <br>
             <h3>Additonal Food Images</h3>
-            <img src=https://www.thegeneticchef.com/wp-content/uploads/2022/07/Chocolate-Walnut-Banana-Bread-1.jpg width ="200" alt = "A close-up image of a chocolate chip banana bread slice with 2 other slices in the background">
-            <img src=https://braziliankitchenabroad.com/wp-content/uploads/2022/04/Chocolate-Chip-Banana-Bread-with-Walnuts-5.jpg width ="200" alt = "Four slices of chocolate chip banana bread, topped with walnuts, resting on a wire rack">
-            <img src="https://somethingnutritiousblog.com/wp-content/uploads/2019/04/fullsizeoutput_161-1617x2048.jpeg" width ="200" alt="A top-down image of a sliced loaf of chocolate chip banana bread">
+            <div class="photo-gallery">
+                <img src=https://www.thegeneticchef.com/wp-content/uploads/2022/07/Chocolate-Walnut-Banana-Bread-1.jpg width ="200" alt = "A close-up image of a chocolate chip banana bread slice with 2 other slices in the background">
+                <img src=https://braziliankitchenabroad.com/wp-content/uploads/2022/04/Chocolate-Chip-Banana-Bread-with-Walnuts-5.jpg width ="200" alt = "Four slices of chocolate chip banana bread, topped with walnuts, resting on a wire rack">
+                <img src="https://somethingnutritiousblog.com/wp-content/uploads/2019/04/fullsizeoutput_161-1617x2048.jpeg" width ="200" alt="A top-down image of a sliced loaf of chocolate chip banana bread">
+            </div>
         </div>
 
 
