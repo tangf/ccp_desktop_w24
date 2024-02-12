@@ -13,7 +13,7 @@ body h3{
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: cadetblue;
+    background-color: darkgray;
     color:white;
     text-align: center;
 }
@@ -33,13 +33,13 @@ header nav ul{
     list-style-type:none;
     margin-bottom: 10px;
     padding: 0;
-    background-color: cadetblue;
+    background-color: darkslategray;
 }
 
 header nav ul li{
     width: 25%;
     float: inline-start;
-    background-color: cadetblue;
+    background-color: darkslategray;
     margin-bottom: 15px;
 }
 
@@ -83,7 +83,7 @@ nav ul li.active{
 }
 
 .active a{
-    background-color:royalblue;
+    background-color:black;
 
 }
 
@@ -94,7 +94,7 @@ nav ul li.active{
     z-index: 100;
     position: absolute;
     background-color: white;
-    color: royalblue;
+    color: black;
 }
 
 .skip:focus {
