@@ -47,7 +47,7 @@ header nav ul li a{
     display: block;
     color:blanchedalmond;
     text-align: center;
-    padding: 20px 20px;
+    padding: 40px 30px;
     text-decoration: none;
 }
 
@@ -56,7 +56,6 @@ header h1{
 	font-size: 2em; 
 	font-weight: bold;
     margin: 20px;
-    text-align: center;
 }
 
 
@@ -91,14 +90,16 @@ nav ul li.active{
 .skip{
     overflow: hidden;
     opacity: 0;
+    padding: 3px;
     z-index: 100;
     position: absolute;
-
+    background-color: blanchedalmond;
+    color: royalblue;
 }
 
 .skip:focus {
-    top: 20px;
-    left: 10px;
+    top: 5px;
+    left: 5px;
     opacity: 1;
 }
 
@@ -136,7 +137,20 @@ nav ul li.active{
     margin: 10px;
     margin-left: 20px;
 }
+
+ol li{
+    margin: 10px;
+    margin-left: 20px;
+}
+
 /*Improve the spacing for paragraphs AND headings*/
 body p, h1, h2 {
     padding: 10px;
+}
+
+/* Disable animation when motion is reduced */
+@media (prefers-reduced-motion: reduce) {
+    .animated-gif {
+        animation: none;
+    }
 }
