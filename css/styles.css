@@ -22,11 +22,21 @@ body h5 {
     margin-top: 10px;
 }
 
+h6 {
+    text-align: center;
+}
+
 .container div {
     min-height:125px;
     padding:20px;
     margin: 10px;
     border:1px solid black;
+}
+
+header {
+    position:sticky;
+    top:0;
+    z-index: 1000;
 }
 
 header nav ul{
@@ -52,7 +62,7 @@ header nav ul li a{
 }
 
 /*Make the h1 heading bigger with a bold font*/
-header h1{
+h1{
 	font-size: 2em; 
 	font-weight: bold;
     margin: 20px;
@@ -64,9 +74,7 @@ img{
     height: 175px;
     width: auto;
     max-width: 100%;
-    padding: 25px;
     margin: 5px;
-	margin-left: 10%
 }
 
 video{
@@ -75,11 +83,15 @@ video{
     max-width: 100%;
     padding: 25px;
     margin: 5px;
-	margin-left: 10%
+	margin-left: 10%;
 }
 
 nav ul li.active{
     font-weight: bold;
+}
+
+.petimage {
+    height: 300px;
 }
 
 .active a{
@@ -112,6 +124,9 @@ nav ul li.active{
 .item{
     display:grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .item div{
@@ -123,14 +138,16 @@ nav ul li.active{
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     justify-items: center;
+    justify-content: space-evenly;
 }
 
 .photo-gallery div{
-    height: 200px;
-	width:auto;
+    height: auto;
+	max-width: 100%;
     padding: 25px;
     margin: 5px;
     border: 0px solid black;
+    
 }
 
 .itembox ul li {
@@ -152,5 +169,15 @@ body p, h1, h2 {
 @media (prefers-reduced-motion: reduce) {
     .animated-gif {
         animation: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .photo-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-items: center;
+        justify-content: space-evenly;
     }
 }
