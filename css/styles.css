@@ -209,3 +209,5 @@ body p, h1, h2 {
     left: 5px;
     opacity: 1;
 }
+
+#more {display: none;}
