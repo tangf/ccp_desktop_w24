@@ -166,6 +166,10 @@ body p, h1, h2 {
         height: 160px;
     }
 
+    video{
+        height: 175px;
+    }
+
     body {
         font-size: 125%
     }
