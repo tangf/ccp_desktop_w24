@@ -145,7 +145,45 @@ body p, h1, h2 {
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 800px) {
+    .photo-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-items: center;
+        justify-content: space-evenly;
+    }
+
+    .petimage {
+        height: 300px;
+    }
+
+    .item {
+        align-items: center;
+    }
+
+    body {
+        font-size: 125%
+    }
+
+    header nav ul {
+        flex-direction: row;
+    }
+
+    header nav ul li{
+        width: 25%;
+        float: inline-start;
+    }
+
+    header {
+        position:sticky;
+        top:0;
+        z-index: 1000;
+    }
+
+}
+
+@media only screen and (min-width: 1100px) {
     .photo-gallery{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
